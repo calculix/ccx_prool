@@ -30,4 +30,5 @@ ccx_2.8p2: $(OCCXMAIN) ccx_2.8p2.a  $(LIBS)
 
 ccx_2.8p2.a: $(OCCXF) $(OCCXC)
 	ar vr $@ $?
-                                                                               
+clean:
+	rm ccx_2.8p2 *.o

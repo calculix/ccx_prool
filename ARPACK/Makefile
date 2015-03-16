@@ -67,10 +67,11 @@ arpacklib:
 cleantest:
 
 cleanlib:
-	( cd $(BLASdir); $(MAKE) clean )
-	( cd $(LAPACKdir); $(MAKE) clean )
-	( cd $(UTILdir); $(MAKE) clean )
-	( cd $(SRCdir); $(MAKE) clean )
+	( cd $(BLASdir); $(MAKE) clean; cd .. )
+	( cd $(LAPACKdir); $(MAKE) clean; cd .. )
+	( cd $(UTILdir); $(MAKE) clean; cd .. )
+	( cd $(SRCdir); $(MAKE) clean; cd .. )
+	rm *.a
 
 help:
     @$(ECHO) "usage: make ?"

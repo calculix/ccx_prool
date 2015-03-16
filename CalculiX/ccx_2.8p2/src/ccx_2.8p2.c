@@ -101,7 +101,11 @@ MPI_Comm_rank(MPI_COMM_WORLD, &myid) ;
 MPI_Comm_size(MPI_COMM_WORLD, &nproc) ;
 #endif
 
-if(argc==1){printf("Usage: CalculiX.exe -i jobname\n");FORTRAN(stop,());}
+if(argc==1)
+{
+printf("\nCalculiX CrunchiX ccx v.2.8p2 www.calculix.de\n\nUsage: ccx -i jobname\n");
+FORTRAN(stop,());
+}
 else{
   for(i=1;i<argc;i++){
     if(strcmp1(argv[i],"-i")==0) {
@@ -133,7 +137,7 @@ printf("CalculiX comes with ABSOLUTELY NO WARRANTY. This is free\n");
 printf("software, and you are welcome to redistribute it under\n");
 printf("certain conditions, see gpl.htm\n\n");
 printf("************************************************************\n\n");
-printf("You are using an executable made on Mi 4. Mär 19:49:02 CET 2015\n");
+printf("You are using an executable made on Пнд Мар 16 22:10:08 EET 2015\n");
 fflush(stdout);
 
 istep=0;

@@ -25,14 +25,15 @@
 # | other than your home directory.      |
 # %--------------------------------------%
 #
-home = $(HOME)/ARPACK
+home = /home/prool/PROJECTS/ccx_prool/ARPACK
 #
 #  %--------------------------------------%
 #  | The platform identifier to suffix to |
 #  | the end of library names             |
 #  %--------------------------------------%
 #
-PLAT = SUN4
+# PLAT = SUN4
+PLAT = INTEL
 #
 #  %------------------------------------------------------%
 #  | The directories to find the various pieces of ARPACK |
@@ -102,7 +103,7 @@ ALIBS =  $(ARPACKLIB) $(LAPACKLIB) $(BLASLIB)
 # %-----------------------------------------%
 #
 FC      = f77
-FFLAGS	= -O -cg89
+FFLAGS	= -O
 
 LDFLAGS = 
 CD      = cd
@@ -112,7 +113,7 @@ ECHO    = echo
 LN      = ln
 LNFLAGS = -s
 
-MAKE    = /bin/make
+MAKE    = make
 
 RM      = rm
 RMFLAGS = -f
