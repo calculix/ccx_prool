@@ -26,7 +26,7 @@ LIBS = \
        -lpthread -lm -lc
 
 ccx_2.8p2: $(OCCXMAIN) ccx_2.8p2.a  $(LIBS)
-	./date.pl; $(CC) $(CFLAGS) -c ccx_2.8p2.c; $(FC) -fopenmp -Wall -O3 -o $@ $(OCCXMAIN) ccx_2.8p2.a $(LIBS)
+	$(CC) $(CFLAGS) -c ccx_2.8p2.c; $(FC) -fopenmp -Wall -O3 -o $@ $(OCCXMAIN) ccx_2.8p2.a $(LIBS)
 
 ccx_2.8p2.a: $(OCCXF) $(OCCXC)
 	ar vr $@ $?
