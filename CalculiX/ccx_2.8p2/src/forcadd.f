@@ -38,7 +38,12 @@
          itr=inotr(1,node)
       endif
 !
-      if(itr.eq.0) then
+!     change: transformations on rotations are taken into account
+!     by the normal of the mean rotation MPC, not by expanding the
+!     MPC in Carthesian coordinates
+!
+c      if(itr.eq.0) then
+      if((itr.eq.0).or.(i.eq.0).or.(i.gt.3)) then
 !
 !        no transformation applies to the node
 !
