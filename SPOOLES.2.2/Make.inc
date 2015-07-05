@@ -9,10 +9,11 @@
 #
 #  place your favorite compiler here
 #
+CC = gcc
 # for solaris
 #
 # CC = gcc
-  CC = /usr/lang-4.0/bin/cc
+# CC = /usr/lang-4.0/bin/cc
 #
 # for sgi
 #
