@@ -32,11 +32,7 @@ e-mail proolix@gmail.com
 sites:
 
 http://calculixforwin.com
-<<<<<<< HEAD
-http://calculix.kharkov.org
-=======
 
 http://calculix.kharkov.org
 
->>>>>>> 0b392298456090beac4d3d62fb877071a700e6be
 http://prool.kharkov.org
