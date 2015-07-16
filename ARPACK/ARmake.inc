@@ -141,3 +141,4 @@ RANLIB   = ranlib
 #
 help:
 	@$(ECHO) "usage: make ?"
+home=/home/prool/PROJECTS/ccx_prool/ARPACK

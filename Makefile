@@ -1,6 +1,6 @@
 # Prool's makefile
 all:
-	cd ARPACK;make lib
+	cd ARPACK;sh ./fixhome.sh;make lib
 	cd ..
 	cd SPOOLES.2.2;make lib
 	cd ..

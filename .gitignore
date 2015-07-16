@@ -31,3 +31,7 @@ ccx
 ccx_2.8
 ccx_2.8p1
 ccx_2.8p2
+
+# prool:
+*.orig
+aaa

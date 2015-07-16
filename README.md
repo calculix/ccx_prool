@@ -7,6 +7,17 @@ fortran
 in Linux use f77
 in cygwin use gfortran
 
+cygwin
+------
+
+For cygwin exe file need this DLLs from /cygwin/bin:
+
+cyggcc_s-1.dll
+cyggfortran-3.dll
+cyggomp-1.dll
+cygquadmath-0.dll
+cygwin1.dll
+
 prool contacts
 --------------
 
@@ -14,6 +25,6 @@ e-mail proolix@gmail.com
 
 sites:
 
-calculixforwin.com
-calculix.kharkov.org
-prool.kharkov.org
+http://calculixforwin.com
+http://calculix.kharkov.org
+http://prool.kharkov.org
