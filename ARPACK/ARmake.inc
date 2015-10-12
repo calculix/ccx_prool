@@ -103,8 +103,8 @@ ALIBS =  $(ARPACKLIB) $(LAPACKLIB) $(BLASLIB)
 # %-----------------------------------------%
 #
 # prool:
-# in Linux FC=f77
-# in cygwin FC=gfortran
+# for Ubuntu FC=f77
+# for cygwin, Centos FC=gfortran
 #
 FC      = gfortran
 FFLAGS	= -O
