@@ -104,8 +104,8 @@ MPI_Comm_size(MPI_COMM_WORLD, &nproc) ;
 if(argc==1)
 {
 printf("\nCalculiX CrunchiX ccx v.2.8p2 www.calculix.de\n\nUsage: ccx -i jobname\n");
-printf("\nBuild under Windows/cygwin by prool %s %s\n\
-proolix@gmail.com\n\
+printf("\nBuilt by prool %s %s\n\
+<proolix@gmail.com>\n\
 caclulixforwin.com calculix.kharkov.org prool.kharkov.org\n",__DATE__,__TIME__);
 FORTRAN(stop,());
 }
