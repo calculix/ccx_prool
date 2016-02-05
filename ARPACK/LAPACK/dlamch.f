@@ -292,6 +292,7 @@
 *
 *+       WHILE( C.EQ.ONE )LOOP
    30    CONTINUE
+	write (6,1000) C,LT,A,LBETA
          IF( C.EQ.ONE ) THEN
             LT = LT + 1
             A = A*LBETA
@@ -300,6 +301,8 @@
             GO TO 30
          END IF
 *+       END WHILE
+c	from prool:
+1000	format ('prool debug output: C LT A LBETA =', E15.7, I5, E15.7, I5)
 *
       END IF
 *
