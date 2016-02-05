@@ -302,7 +302,7 @@
          END IF
 *+       END WHILE
 c	from prool:
-1000	format ('prool debug output: C LT A LBETA =', E15.7, I5, E15.7, I5)
+1000	format ('prool debug output: C LT A LBETA ', E15.7, I5, E15.7, I5)
 *
       END IF
 *
