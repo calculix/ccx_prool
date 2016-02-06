@@ -27,10 +27,6 @@
 *.i*86
 *.x86_64
 *.hex
-ccx
-ccx_2.8
-ccx_2.8p1
-ccx_2.8p2
 
 # prool:
 *.orig
