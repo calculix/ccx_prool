@@ -21,13 +21,18 @@ cygquadmath-0.dll
 
 cygwin1.dll
 
-Use native libarpack in Centos Linux/32 bit (or other Linuxes)
+Use native Linux libarpack (recommended for 32 bit Linuses)
 --------------------------------------------------------------
+
+for Centos:
+
 yum install arpack-devel
 
 yum install lapack-devel
 
 yum install blas-devel
+
+(or 'apt-get install libarpack2-dev' in Debian)
 
 and use Makefile.arpack
 
