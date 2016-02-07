@@ -24,7 +24,9 @@ cygwin1.dll
 Use native libarpack in Centos Linux/32 bit (or other Linuxes)
 --------------------------------------------------------------
 yum install arpack-devel
+
 yum install lapack-devel
+
 yum install blas-devel
 
 and use Makefile.arpack
