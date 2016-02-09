@@ -252,6 +252,8 @@
          SAVEC = C
          C = DLAMC3( C, -A )
          LBETA = C + QTR
+	write (6,1001) C,QTR,LBETA
+1001	format ('prool debug output: LBETA ', E15.7, E15.7, I5)
 *
 *        Now determine whether rounding or chopping occurs,  by adding a
 *        bit  less  than  beta/2  and a  bit  more  than  beta/2  to  a.
@@ -293,6 +295,7 @@
 *+       WHILE( C.EQ.ONE )LOOP
    30    CONTINUE
 	write (6,1000) C,LT,A,LBETA
+1000	format ('prool debug output: C LT A LBETA ', E15.7, I5, E15.7, I5)
          IF( C.EQ.ONE ) THEN
             LT = LT + 1
             A = A*LBETA
@@ -301,8 +304,6 @@
             GO TO 30
          END IF
 *+       END WHILE
-c	from prool:
-1000	format ('prool debug output: C LT A LBETA ', E15.7, I5, E15.7, I5)
 *
       END IF
 *
