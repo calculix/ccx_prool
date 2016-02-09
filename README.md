@@ -36,6 +36,13 @@ yum install blas-devel
 
 and use Makefile.arpack
 
+DIRTY HACK only for 32 bit Linuses
+----------------------------------
+
+in file ARPACK/LAPACK/dlamch.f add LBETA=2 after string 'LBETA=C+QTR'
+
+Note: NO WARRANTIES! It's FOOLISH hack bikoz i'm mad programmer
+
 prool contacts
 --------------
 
