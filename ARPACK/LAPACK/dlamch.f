@@ -225,6 +225,8 @@
             GO TO 10
          END IF
 *+       END WHILE
+	write (6,1003) C,A
+1003	format ('1)prool debug output: C,A ', E15.7, E15.7)
 *
 *        Now compute  b = 2.0**m  with the smallest positive integer m
 *        such that
@@ -250,10 +252,12 @@
 *
          QTR = ONE / 4
          SAVEC = C
+	write (6,1002) C,A
+1002	format ('prool debug output: C,A ', E15.7, E15.7)
          C = DLAMC3( C, -A )
          LBETA = C + QTR
 	write (6,1001) C,QTR,LBETA
-1001	format ('prool debug output: LBETA ', E15.7, E15.7, I5)
+1001	format ('prool debug output: C,QTR,LBETA ', E15.7, E15.7, I5)
 *
 *        Now determine whether rounding or chopping occurs,  by adding a
 *        bit  less  than  beta/2  and a  bit  more  than  beta/2  to  a.
