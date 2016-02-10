@@ -21,8 +21,8 @@ cygquadmath-0.dll
 
 cygwin1.dll
 
-Use native Linux libarpack (recommended for 32 bit Linuses)
---------------------------------------------------------------
+Use native Linux libarpack (if your need)
+-----------------------------------------
 
 for Centos:
 
@@ -36,12 +36,18 @@ yum install blas-devel
 
 and use Makefile.arpack
 
-DIRTY HACK only for 32 bit Linuses
-----------------------------------
+Optimization
+------------
 
-in file ARPACK/LAPACK/dlamch.f add LBETA=2 after string 'LBETA=C+QTR'
+In 32 bit Linux fortran optimization set OFF !
 
-Note: NO WARRANTIES! It's FOOLISH hack bikoz i'm mad programmer
+In ARmake.inc:
+
+FFLAG =
+
+In 64 bit Linux and 32/64 cygwin this option may be any:
+
+-O or not -O
 
 prool contacts
 --------------

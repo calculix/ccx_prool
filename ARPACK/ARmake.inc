@@ -107,7 +107,9 @@ ALIBS =  $(ARPACKLIB) $(LAPACKLIB) $(BLASLIB)
 # for cygwin, Centos FC=gfortran
 #
 FC      = gfortran
-FFLAGS	= -O
+# Optimization of LAPACK fortran code prohibided in 32 bit Linux!
+FFLAGS = 
+# FFLAGS	= -O
 
 LDFLAGS = 
 CD      = cd
@@ -142,6 +144,3 @@ RANLIB   = ranlib
 help:
 	@$(ECHO) "usage: make ?"
 home=/home/prool/PROJECTS/ccx_prool/ARPACK
-home=/home/prool/Proj/ccx_prool/ARPACK
-home=/home/prool/Proj/ccx_prool/ARPACK
-home=/home/prool/Proj/ccx_prool/ARPACK
