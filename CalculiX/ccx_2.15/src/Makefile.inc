@@ -437,11 +437,9 @@ keystart.f \
 knotmpc.f \
 labyrinth.f \
 lab_straight_ppkrit.f \
-lbfgsb.f \
 limit_case_calc.f \
 linel.f \
 linkdissimilar.f \
-linpack.f \
 linscal.f \
 linscal10.f \
 linvec.f \
@@ -776,7 +774,6 @@ thickness.f \
 tiefaccont.f \
 ties.f \
 timepointss.f \
-timer.f \
 transformatrix.f \
 transformfs.f \
 transforms.f \
