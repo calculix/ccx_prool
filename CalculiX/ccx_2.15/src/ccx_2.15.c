@@ -33,6 +33,18 @@
 ITG myid = 0, nproc = 0;
 #endif
 
+void prool_info(void)
+{
+printf("Build by Prool, 26-Dec-2018\ninteger*8 precision\n");
+printf("size of int %li",sizeof(int));
+printf("\r\nsize of ITG %li",sizeof(ITG));
+printf("\r\nsize of long int %li",sizeof(long int));
+printf("\r\nsize of short int %li",sizeof(short int));
+printf("\r\nsize of char %li",sizeof(char));
+printf("\r\nsize of char* %li",sizeof(char*));
+printf("\r\nsize of int* %li\n",sizeof(int*));
+}
+
 int main(int argc,char *argv[])
 {
   
@@ -104,7 +116,7 @@ MPI_Comm_rank(MPI_COMM_WORLD, &myid) ;
 MPI_Comm_size(MPI_COMM_WORLD, &nproc) ;
 #endif
 
-if(argc==1){printf("Usage: CalculiX.exe -i jobname\n");FORTRAN(stop,());}
+if(argc==1){printf("Usage: CalculiX.exe -i jobname\n");prool_info();FORTRAN(stop,());}
 else{
   for(i=1;i<argc;i++){
     if(strcmp1(argv[i],"-i")==0) {
@@ -138,7 +150,7 @@ printf("CalculiX comes with ABSOLUTELY NO WARRANTY. This is free\n");
 printf("software, and you are welcome to redistribute it under\n");
 printf("certain conditions, see gpl.htm\n\n");
 printf("************************************************************\n\n");
-printf("You are using an executable made on Sa 15. Dez 15:34:34 CET 2018\n");
+printf("You are using an executable made on Ср дек 26 13:40:09 EET 2018\n");
 fflush(stdout);
 
 istep=0;
