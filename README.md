@@ -36,6 +36,13 @@ yum install blas-devel
 
 and use Makefile.arpack
 
+macOS
+-----
+
+For macOS need delete flags "-lpthread -lm -lc"
+
+(see Makefile.macos)
+
 Optimization
 ------------
 
