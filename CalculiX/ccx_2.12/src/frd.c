@@ -188,7 +188,7 @@ void frd(double *co,ITG *nk,ITG *kon,ITG *ipkon,char *lakon,ITG *ne0,
     fprintf(f1,"%5sUHOST                                                              \n",p1);
     fprintf(f1,"%5sUPGM               CalculiX                                        \n",p1);
     fprintf(f1,"%5sUVERSION           Version 2.12                             \n",p1);
-    fprintf(f1,"%5sUCOMPILETIME       So 2. Apr 15:03:04 CEST 2017                    \n",p1);
+    fprintf(f1,"%5sUCOMPILETIME       Tue Oct 12 17:41:56 EEST 2021                    \n",p1);
     fprintf(f1,"%5sUDIR                                                               \n",p1);
     fprintf(f1,"%5sUDBN                                                               \n",p1);
     
