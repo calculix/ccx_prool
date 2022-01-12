@@ -1,6 +1,6 @@
 
 CFLAGS = -Wall -O2  -I ../../../SPOOLES.2.2 -DARCH="Linux" -DSPOOLES -DARPACK -DMATRIXSTORAGE -DNETWORKOUT
-FFLAGS = -Wall -O2
+FFLAGS = -Wall -O2 -fallow-argument-mismatch
 
 CC=cc
 FC=gfortran
