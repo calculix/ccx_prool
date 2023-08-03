@@ -108,7 +108,7 @@ ALIBS =  $(ARPACKLIB) $(LAPACKLIB) $(BLASLIB)
 #
 FC      = gfortran
 # Optimization of LAPACK fortran code prohibided in 32 bit Linux!
-FFLAGS = -fallow-argument-mismatch
+FFLAGS = 
 # FFLAGS	= -O
 
 LDFLAGS = 
@@ -143,3 +143,4 @@ RANLIB   = ranlib
 #
 help:
 	@$(ECHO) "usage: make ?"
+home=/home/prool/Proj/ccx_prool/ARPACK
