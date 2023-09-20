@@ -1,10 +1,10 @@
 # ccx_prool
 Prool's modifications of CalculiX CrunchiX (ccx)
 
-download binaryes for windows
+download binaries for windows
 -----------------------------
 
-http://files.calculix.kharkov.org/ccx_prool/4/ccx_5_jul_2015.zip
+http://files.calculix.kharkov.org/ccx_prool/
 
 cygwin
 ------
@@ -56,6 +56,13 @@ In 64 bit Linux and 32/64 cygwin this option may be any:
 
 -O or not -O
 
+Various gfortran
+----------------
+For new gfortran version add flag -fallow-argument-mismatch to FFLAGS in file ARmake.inc
+
+For old gfortran delete this flag
+
+
 prool contacts
 --------------
 
@@ -68,3 +75,5 @@ http://calculixforwin.com
 http://calculix.kharkov.org
 
 http://prool.kharkov.org
+
+Prool lives in city of Kharkiv, Ukraine
