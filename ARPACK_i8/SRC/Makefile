@@ -46,9 +46,6 @@ COBJ  = cnaitr.o cnapps.o cnaup2.o cnaupd.o cneigh.o cneupd.o cngets.o \
 ZOBJ  = znaitr.o znapps.o znaup2.o znaupd.o zneigh.o zneupd.o zngets.o \
         zgetv0.o zsortc.o zstatn.o
 
-# by prool:
-FFLAGS = -fdefault-integer-8
-
 .f.o:
 	$(FC) $(FFLAGS) -c $<
 
