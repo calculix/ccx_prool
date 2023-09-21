@@ -58,7 +58,7 @@ In 64 bit Linux and 32/64 cygwin this option may be any:
 
 Various gfortran
 ----------------
-For new gfortran version add flag -fallow-argument-mismatch to FFLAGS in file ARmake.inc
+For new gfortran version add flag -fallow-argument-mismatch to FFLAGS in file ARmake.inc and/or in ccx.../src/Makefile
 
 For old gfortran delete this flag
 
